@@ -1,6 +1,6 @@
 ﻿namespace StudentInfoSystem.Models
 {
-    public enum Oks
+    public enum Degree
     {
         Bachelor,
         Master

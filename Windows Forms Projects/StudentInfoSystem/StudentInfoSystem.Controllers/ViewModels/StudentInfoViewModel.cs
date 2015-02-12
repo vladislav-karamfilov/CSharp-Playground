@@ -20,7 +20,7 @@
                         Group = x.Group,
                         LastName = x.LastName,
                         SecondName = x.SecondName,
-                        Oks = x.Oks,
+                        Degree = x.Degree,
                         Potok = x.Potok,
                         Speciality = x.Speciality,
                         FirstName = x.FirstName,
@@ -37,7 +37,7 @@
 
         public string Faculty { get; set; }
 
-        public Oks Oks { get; set; }
+        public Degree Degree { get; set; }
 
         public StudentStatus Status { get; set; }
 

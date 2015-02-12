@@ -74,8 +74,8 @@
         {
             var oksItemsList = new List<dynamic>
             {
-                new { Key = Oks.Bachelor, Value = "Бакалавър" },
-                new { Key = Oks.Master, Value = "Магистър" }
+                new { Key = Degree.Bachelor, Value = "Бакалавър" },
+                new { Key = Degree.Master, Value = "Магистър" }
             };
 
             this.oksItemsBindingSource.DataSource = oksItemsList;
@@ -134,7 +134,7 @@
                 this.textBoxPotok.Text = studentInfo.Potok;
                 this.textBoxFacultyNumber.Text = studentInfo.FacultyNumber;
                 this.numCourse.Value = studentInfo.Course;
-                this.comboOks.SelectedValue = studentInfo.Oks;
+                this.comboOks.SelectedValue = studentInfo.Degree;
                 this.comboStatus.SelectedValue = studentInfo.Status;
             }
         }
@@ -253,7 +253,7 @@
                 LastName = this.textBoxLastName.Text,
                 Status = (StudentStatus)this.comboStatus.SelectedValue,
                 Group = byte.Parse(this.textBoxGroup.Text),
-                Oks = (Oks)this.comboOks.SelectedValue,
+                Degree = (Degree)this.comboOks.SelectedValue,
                 Potok = this.textBoxPotok.Text,
                 Speciality = this.textBoxSpeciality.Text
             };

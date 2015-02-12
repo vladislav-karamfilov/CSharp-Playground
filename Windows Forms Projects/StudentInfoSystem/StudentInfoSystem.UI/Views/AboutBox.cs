@@ -8,13 +8,13 @@ namespace StudentInfoSystem.UI.Views
     {
         public AboutBox()
         {
-            InitializeComponent();
-            this.Text = String.Format("About {0}", AssemblyTitle);
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription;
+            this.InitializeComponent();
+            this.Text = String.Format("About {0}", this.AssemblyTitle);
+            this.labelProductName.Text = this.AssemblyProduct;
+            this.labelVersion.Text = String.Format("Version {0}", this.AssemblyVersion);
+            this.labelCopyright.Text = this.AssemblyCopyright;
+            this.labelCompanyName.Text = this.AssemblyCompany;
+            this.textBoxDescription.Text = this.AssemblyDescription;
         }
 
         #region Assembly Attribute Accessors
@@ -32,6 +32,7 @@ namespace StudentInfoSystem.UI.Views
                         return titleAttribute.Title;
                     }
                 }
+
                 return System.IO.Path.GetFileNameWithoutExtension(Assembly.GetExecutingAssembly().CodeBase);
             }
         }
@@ -51,8 +52,9 @@ namespace StudentInfoSystem.UI.Views
                 object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyDescriptionAttribute), false);
                 if (attributes.Length == 0)
                 {
-                    return "";
+                    return string.Empty;
                 }
+
                 return ((AssemblyDescriptionAttribute)attributes[0]).Description;
             }
         }
@@ -64,10 +66,10 @@ namespace StudentInfoSystem.UI.Views
                 object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyProductAttribute), false);
                 if (attributes.Length == 0)
                 {
-                    return "";
+                    return string.Empty;
                 }
 
-                var product = ((AssemblyProductAttribute) attributes[0]).Product;
+                var product = ((AssemblyProductAttribute)attributes[0]).Product;
                 return product.Substring(0, product.LastIndexOf('.'));
             }
         }
@@ -79,8 +81,9 @@ namespace StudentInfoSystem.UI.Views
                 object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
                 if (attributes.Length == 0)
                 {
-                    return "";
+                    return string.Empty;
                 }
+
                 return ((AssemblyCopyrightAttribute)attributes[0]).Copyright;
             }
         }
@@ -92,8 +95,9 @@ namespace StudentInfoSystem.UI.Views
                 object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCompanyAttribute), false);
                 if (attributes.Length == 0)
                 {
-                    return "";
+                    return string.Empty;
                 }
+
                 return ((AssemblyCompanyAttribute)attributes[0]).Company;
             }
         }

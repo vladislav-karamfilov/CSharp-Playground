@@ -39,7 +39,7 @@
 
         public int Group { get; set; }
 
-        public Oks Oks { get; set; }
+        public Degree Degree { get; set; }
 
         public StudentStatus StudentStatus { get; set; }
 
