@@ -33,7 +33,6 @@
             this.fileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logInOutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miRegister = new System.Windows.Forms.ToolStripMenuItem();
-            this.newMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -106,7 +105,6 @@
             this.fileMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logInOutMenuItem,
             this.miRegister,
-            this.newMenuItem,
             this.toolStripSeparator1,
             this.exitMenuItem});
             this.fileMenuItem.Name = "fileMenuItem";
@@ -126,12 +124,6 @@
             this.miRegister.Size = new System.Drawing.Size(152, 22);
             this.miRegister.Text = "Register";
             this.miRegister.Click += new System.EventHandler(this.miRegister_Click);
-            // 
-            // newMenuItem
-            // 
-            this.newMenuItem.Name = "newMenuItem";
-            this.newMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.newMenuItem.Text = "New";
             // 
             // toolStripSeparator1
             // 
@@ -568,7 +560,6 @@
         private System.Windows.Forms.ToolStripMenuItem editMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logInOutMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem exitMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openPictureToolStripMenuItem;

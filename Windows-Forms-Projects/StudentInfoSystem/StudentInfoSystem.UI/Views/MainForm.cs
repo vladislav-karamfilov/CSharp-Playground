@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
-    using System.Drawing;
     using System.Text;
     using System.Windows.Forms;
 
@@ -243,24 +242,25 @@
 
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            var studentInfo = new StudentInfoViewModel
-            {
-                Course = (byte)this.numCourse.Value,
-                Faculty = this.textBoxFaculty.Text,
-                FacultyNumber = this.textBoxFacultyNumber.Text,
-                FirstName = this.textBoxFirstName.Text,
-                SecondName = this.textBoxSecondName.Text,
-                LastName = this.textBoxLastName.Text,
-                Status = (StudentStatus)this.comboStatus.SelectedValue,
-                Group = byte.Parse(this.textBoxGroup.Text),
-                Degree = (Degree)this.comboOks.SelectedValue,
-                Potok = this.textBoxPotok.Text,
-                Speciality = this.textBoxSpeciality.Text
-            };
-
-            var studentsContoller = new StudentsController(new StudentInfoSystemData());
             try
             {
+                var studentInfo = new StudentInfoViewModel
+                {
+                    Course = (byte)this.numCourse.Value,
+                    Faculty = this.textBoxFaculty.Text,
+                    FacultyNumber = this.textBoxFacultyNumber.Text,
+                    FirstName = this.textBoxFirstName.Text,
+                    SecondName = this.textBoxSecondName.Text,
+                    LastName = this.textBoxLastName.Text,
+                    Status = (StudentStatus)this.comboStatus.SelectedValue,
+                    Group = byte.Parse(this.textBoxGroup.Text),
+                    Degree = (Degree)this.comboOks.SelectedValue,
+                    Potok = this.textBoxPotok.Text,
+                    Speciality = this.textBoxSpeciality.Text
+                };
+
+                var studentsContoller = new StudentsController(new StudentInfoSystemData());
+
                 studentsContoller.AddStudent(studentInfo);
                 MessageBox.Show(
                     "Успешно добавихте нов студент!",
