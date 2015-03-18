@@ -7,9 +7,9 @@
 
     using StudentInfoSystem.Data.Contracts;
 
-    public class DbRepository<T> : IRepository<T> where T : class
+    public class EfRepository<T> : IRepository<T> where T : class
     {
-        public DbRepository(IStudentInfoSystemDbContext context)
+        public EfRepository(IStudentInfoSystemDbContext context)
         {
             if (context == null)
             {

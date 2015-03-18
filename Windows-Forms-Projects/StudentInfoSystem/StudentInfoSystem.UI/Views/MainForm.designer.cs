@@ -114,26 +114,26 @@
             // logInOutMenuItem
             // 
             this.logInOutMenuItem.Name = "logInOutMenuItem";
-            this.logInOutMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.logInOutMenuItem.Size = new System.Drawing.Size(116, 22);
             this.logInOutMenuItem.Text = "Login";
             this.logInOutMenuItem.Click += new System.EventHandler(this.logInOutMenuItem_Click);
             // 
             // miRegister
             // 
             this.miRegister.Name = "miRegister";
-            this.miRegister.Size = new System.Drawing.Size(152, 22);
+            this.miRegister.Size = new System.Drawing.Size(116, 22);
             this.miRegister.Text = "Register";
             this.miRegister.Click += new System.EventHandler(this.miRegister_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(113, 6);
             // 
             // exitMenuItem
             // 
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitMenuItem.Size = new System.Drawing.Size(116, 22);
             this.exitMenuItem.Text = "Exit";
             this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
             // 
@@ -230,7 +230,7 @@
             this.textBoxPotok.Location = new System.Drawing.Point(552, 211);
             this.textBoxPotok.Name = "textBoxPotok";
             this.textBoxPotok.Size = new System.Drawing.Size(56, 20);
-            this.textBoxPotok.TabIndex = 12;
+            this.textBoxPotok.TabIndex = 90;
             // 
             // gbStudentInfo
             // 
@@ -271,7 +271,7 @@
             0});
             this.numCourse.Name = "numCourse";
             this.numCourse.Size = new System.Drawing.Size(55, 20);
-            this.numCourse.TabIndex = 14;
+            this.numCourse.TabIndex = 80;
             this.numCourse.Value = new decimal(new int[] {
             1,
             0,
@@ -283,7 +283,7 @@
             this.textBoxGroup.Location = new System.Drawing.Point(302, 97);
             this.textBoxGroup.Name = "textBoxGroup";
             this.textBoxGroup.Size = new System.Drawing.Size(56, 20);
-            this.textBoxGroup.TabIndex = 13;
+            this.textBoxGroup.TabIndex = 100;
             // 
             // lblGroup
             // 
@@ -318,7 +318,7 @@
             this.comboStatus.Location = new System.Drawing.Point(89, 136);
             this.comboStatus.Name = "comboStatus";
             this.comboStatus.Size = new System.Drawing.Size(121, 21);
-            this.comboStatus.TabIndex = 8;
+            this.comboStatus.TabIndex = 60;
             // 
             // comboOks
             // 
@@ -329,28 +329,28 @@
             this.comboOks.Location = new System.Drawing.Point(89, 97);
             this.comboOks.Name = "comboOks";
             this.comboOks.Size = new System.Drawing.Size(121, 21);
-            this.comboOks.TabIndex = 7;
+            this.comboOks.TabIndex = 50;
             // 
             // textBoxFacultyNumber
             // 
             this.textBoxFacultyNumber.Location = new System.Drawing.Point(89, 171);
             this.textBoxFacultyNumber.Name = "textBoxFacultyNumber";
             this.textBoxFacultyNumber.Size = new System.Drawing.Size(122, 20);
-            this.textBoxFacultyNumber.TabIndex = 6;
+            this.textBoxFacultyNumber.TabIndex = 70;
             // 
             // textBoxSpeciality
             // 
             this.textBoxSpeciality.Location = new System.Drawing.Point(89, 63);
             this.textBoxSpeciality.Name = "textBoxSpeciality";
             this.textBoxSpeciality.Size = new System.Drawing.Size(122, 20);
-            this.textBoxSpeciality.TabIndex = 6;
+            this.textBoxSpeciality.TabIndex = 40;
             // 
             // textBoxFaculty
             // 
             this.textBoxFaculty.Location = new System.Drawing.Point(89, 28);
             this.textBoxFaculty.Name = "textBoxFaculty";
             this.textBoxFaculty.Size = new System.Drawing.Size(122, 20);
-            this.textBoxFaculty.TabIndex = 5;
+            this.textBoxFaculty.TabIndex = 30;
             // 
             // lblFacultyNumber
             // 
@@ -417,21 +417,21 @@
             this.textBoxLastName.Location = new System.Drawing.Point(85, 87);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(284, 20);
-            this.textBoxLastName.TabIndex = 5;
+            this.textBoxLastName.TabIndex = 20;
             // 
             // textBoxSecondName
             // 
             this.textBoxSecondName.Location = new System.Drawing.Point(85, 56);
             this.textBoxSecondName.Name = "textBoxSecondName";
             this.textBoxSecondName.Size = new System.Drawing.Size(284, 20);
-            this.textBoxSecondName.TabIndex = 4;
+            this.textBoxSecondName.TabIndex = 10;
             // 
             // textBoxFirstName
             // 
             this.textBoxFirstName.Location = new System.Drawing.Point(85, 25);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(284, 20);
-            this.textBoxFirstName.TabIndex = 3;
+            this.textBoxFirstName.TabIndex = 0;
             // 
             // lblLastName
             // 

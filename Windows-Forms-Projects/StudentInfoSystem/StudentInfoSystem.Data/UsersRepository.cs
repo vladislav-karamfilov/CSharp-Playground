@@ -5,7 +5,7 @@
     using StudentInfoSystem.Data.Contracts;
     using StudentInfoSystem.Models;
 
-    public class UsersRepository : DbRepository<User>, IUsersRepository
+    public class UsersRepository : EfRepository<User>, IUsersRepository
     {
         public UsersRepository(IStudentInfoSystemDbContext context)
             : base(context)

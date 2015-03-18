@@ -6,7 +6,7 @@
     using StudentInfoSystem.Data.Contracts;
     using StudentInfoSystem.Models;
 
-    public class StudentsRepository : DbRepository<Student>, IStudentsRepository
+    public class StudentsRepository : EfRepository<Student>, IStudentsRepository
     {
         public StudentsRepository(IStudentInfoSystemDbContext context) 
             : base(context)

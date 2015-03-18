@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.studentsDataGrid = new System.Windows.Forms.DataGridView();
             this.comboBoxGroup = new System.Windows.Forms.ComboBox();
             this.lblGroup = new System.Windows.Forms.Label();
             this.btnGroupFilter = new System.Windows.Forms.Button();
+            this.comboGroupsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.studentsDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboGroupsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // studentsDataGrid
@@ -83,6 +86,7 @@
             this.Text = "GroupsForm";
             this.Load += new System.EventHandler(this.GroupsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.studentsDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboGroupsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,5 +98,6 @@
         private System.Windows.Forms.ComboBox comboBoxGroup;
         private System.Windows.Forms.Label lblGroup;
         private System.Windows.Forms.Button btnGroupFilter;
+        private System.Windows.Forms.BindingSource comboGroupsBindingSource;
     }
 }

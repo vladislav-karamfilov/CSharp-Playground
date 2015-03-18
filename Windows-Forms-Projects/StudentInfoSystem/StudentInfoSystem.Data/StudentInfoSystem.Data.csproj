@@ -53,7 +53,7 @@
     <Compile Include="Contracts\IStudentInfoSystemDbContext.cs" />
     <Compile Include="Contracts\IStudentsRepository.cs" />
     <Compile Include="Contracts\IUsersRepository.cs" />
-    <Compile Include="DbRepository.cs" />
+    <Compile Include="EfRepository.cs" />
     <Compile Include="Migrations\DefaultConfiguration.cs" />
     <Compile Include="StudentInfoSystemData.cs" />
     <Compile Include="StudentInfoSystemDbContext.cs" />
