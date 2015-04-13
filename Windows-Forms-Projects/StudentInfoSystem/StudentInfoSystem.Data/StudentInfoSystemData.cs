@@ -1,17 +1,19 @@
 ﻿namespace StudentInfoSystem.Data
 {
+    using System.Data.Entity;
+
     using StudentInfoSystem.Data.Contracts;
 
     public class StudentInfoSystemData : IStudentInfoSystemData
     {
-        private readonly IStudentInfoSystemDbContext context;
+        private readonly DbContext context;
 
         public StudentInfoSystemData()
             : this(new StudentInfoSystemDbContext())
         {
         }
 
-        public StudentInfoSystemData(IStudentInfoSystemDbContext context)
+        public StudentInfoSystemData(DbContext context)
         {
             this.context = context;
         }
@@ -29,7 +31,7 @@
             get { return new StudentsRepository(this.Context); }
         }
 
-        public IStudentInfoSystemDbContext Context
+        public DbContext Context
         {
             get { return this.context; }
         }

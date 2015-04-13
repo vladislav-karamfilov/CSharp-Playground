@@ -1,6 +1,7 @@
 ﻿namespace StudentInfoSystem.Data
 {
     using System.Collections.Generic;
+    using System.Data.Entity;
     using System.Linq;
 
     using StudentInfoSystem.Data.Contracts;
@@ -8,7 +9,7 @@
 
     public class StudentsRepository : EfRepository<Student>, IStudentsRepository
     {
-        public StudentsRepository(IStudentInfoSystemDbContext context) 
+        public StudentsRepository(DbContext context) 
             : base(context)
         {
         }

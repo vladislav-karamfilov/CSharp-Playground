@@ -39,6 +39,10 @@
                     MessageBox.Show("Групата трябва да е число!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            else
+            {
+                this.studentsDataGrid.DataSource = studentsController.GetStudentsInGroup().ToList();
+            }
         }
 
         private void LoadGroupsComboboxDataSource(IStudentInfoSystemData data)

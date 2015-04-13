@@ -9,7 +9,7 @@
 
     public class EfRepository<T> : IRepository<T> where T : class
     {
-        public EfRepository(IStudentInfoSystemDbContext context)
+        public EfRepository(DbContext context)
         {
             if (context == null)
             {
@@ -22,7 +22,7 @@
 
         protected IDbSet<T> DbSet { get; private set; }
 
-        protected IStudentInfoSystemDbContext Context { get; private set; }
+        protected DbContext Context { get; private set; }
 
         public virtual IQueryable<T> All()
         {

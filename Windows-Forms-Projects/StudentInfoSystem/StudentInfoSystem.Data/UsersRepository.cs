@@ -1,5 +1,6 @@
 ﻿namespace StudentInfoSystem.Data
 {
+    using System.Data.Entity;
     using System.Linq;
 
     using StudentInfoSystem.Data.Contracts;
@@ -7,7 +8,7 @@
 
     public class UsersRepository : EfRepository<User>, IUsersRepository
     {
-        public UsersRepository(IStudentInfoSystemDbContext context)
+        public UsersRepository(DbContext context)
             : base(context)
         {
         }
